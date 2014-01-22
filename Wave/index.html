@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script type="text/javascript" src="Base.js"></script>
+</head>
+<body onload="Initial('form', 'samp', 'timediv', 'canvas'); Initial2('canvas2');">
+    <form name="form">
+        Sampling
+        <select name="samp" size="1" onchange="ChangeCtrl()">
+            <option value=""></option>
+        </select>
+
+        Time/DIV
+        <select name="timediv" size="1" onchange="ChangeCtrl()">
+            <option value=""></option>
+        </select>
+    </form>
+    <canvas id="canvas" width="10" height="10" style="z-index:0"></canvas>
+    <canvas id="canvas2" width="10" height="10" style="z-index:1"></canvas>
+</body>
+</html>
